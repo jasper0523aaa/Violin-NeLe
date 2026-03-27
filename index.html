@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林恩樂 En-Le Lin | 跨界流行小提琴家</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #333;
+            --accent-color: #8e735b; 
+            --bg-color: #fdfdfd;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            line-height: 1.8;
+        }
+
+        h1, h2, .serif { font-family: 'Noto Serif TC', serif; }
+
+        nav {
+            padding: 30px;
+            text-align: center;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0 80px 0;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 2px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            margin-bottom: 50px;
+        }
+
+        .intro h1 { font-size: 2.2rem; margin-bottom: 15px; letter-spacing: 2px; }
+        .sub-title { font-size: 1.2rem; color: var(--accent-color); margin-bottom: 30px; display: block; }
+        .intro p { font-size: 1.05rem; color: #555; max-width: 700px; margin: 0 auto; text-align: justify; }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 50px;
+            padding: 30px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stat-item b { font-size: 1.4rem; color: var(--primary-color); display: block; }
+        .stat-item span { font-size: 0.85rem; color: #888; }
+
+        /* Section Styling */
+        section { padding: 80px 0; }
+        h2 { text-align: center; font-size: 1.8rem; margin-bottom: 50px; position: relative; }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 1px;
+            background: var(--accent-color);
+        }
+
+        /* Form Container */
+        .form-wrapper {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+            padding-top: 20px;
+        }
+
+        /* Contact Section */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn-link {
+            text-decoration: none;
+            color: var(--primary-color);
+            border: 1px solid #ddd;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover { border-color: var(--primary-color); background: var(--primary-color); color: white; }
+
+        @media (max-width: 600px) {
+            .intro h1 { font-size: 1.8rem; }
+            .stats { grid-template-columns: 1fr; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>En-Le Lin • Violin Performance</nav>
+
+<div class="container">
+    <header class="hero">
+        <img src="profile.png" alt="林恩樂 小提琴家" class="profile-img">
+        <div class="intro">
+            <h1>林恩樂 En-Le Lin</h1>
+            <span class="sub-title serif">跨界流行小提琴家</span>
+            <p>
+                從國小五年級的醫院志工琴聲開始，音樂對我而言不只是表演，更是情感的連結。
+                20歲正式踏入專業商演領域，在西餐廳、婚禮、商務晚宴中不斷磨練。現年24歲的我，已累積超過 500 場演出經驗，
+                擅長將流行金曲與古典樂理完美融合，無需看譜即可即興演奏百首曲目。
+            </p>
+            
+            <div class="stats">
+                <div class="stat-item"><b>500+</b><span>累積演出場次</span></div>
+                <div class="stat-item"><b>100+</b><span>流行即興曲目</span></div>
+                <div class="stat-item"><b>4 Years</b><span>專業接案資歷</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="booking">
+        <h2>預約演出詢價</h2>
+        <div class="form-wrapper">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfep1xbZoYheTnVVDz9kmbaoVhaFE6BEK0put9HLfhvTzPpiw/viewform?embedded=true" 
+                width="100%" 
+                height="900" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">載入中…</iframe>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center;">
+        <h2>聯絡方式</h2>
+        <p style="margin-bottom: 30px; color: #666;">歡迎直接透過社群媒體或通訊軟體與我聯繫</p>
+        <div class="contact-links">
+            <a href="https://line.me/ti/p/~你的ID" class="btn-link">LINE 洽詢</a>
+            <a href="https://instagram.com/你的帳號" class="btn-link">Instagram</a>
+            <a href="mailto:你的信箱" class="btn-link">Email</a>
+        </div>
+    </section>
+</div>
+
+<footer style="text-align: center; padding: 60px; color: #bbb; font-size: 0.75rem; letter-spacing: 1px;">
+    &copy; 2026 EN-LE LIN VIOLIN. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
